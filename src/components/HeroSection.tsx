@@ -13,7 +13,6 @@ const HeroSection = () => {
           fill
           className="object-cover"
           priority
-          sizes="100vw"
         />
       </div>
 
@@ -21,7 +20,6 @@ const HeroSection = () => {
       <div className="relative z-10">
         <Navbar />
       </div>
-
     </div>
   );
 };
