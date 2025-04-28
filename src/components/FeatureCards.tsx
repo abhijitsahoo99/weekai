@@ -23,8 +23,8 @@ const FeatureCards = () => {
         <p
           className={`text-[#333] text-sm md:text-base lg:text-[18px] font-medium leading-[120%] ${inter.className}`}
         >
-          Rather recap every Friday. Tell WeekAI about your week—personal goals,
-          work, or anything you aim to improve consistently.
+          Rather recap every Friday. Tell WeekAI about your week&mdash;personal
+          goals, work, or anything you aim to improve consistently.
         </p>
       </div>
       {/* Card 2 */}
@@ -44,8 +44,8 @@ const FeatureCards = () => {
         <p
           className={`text-[#333] text-sm md:text-base lg:text-[18px] font-medium leading-[120%] ${inter.className}`}
         >
-          WEEKAI learns what you're working on, where you're aiming to improve,
-          and how your ideal week should look.
+          WEEKAI learns what you&apos;re working on, where you&apos;re aiming to
+          improve, and how your ideal week should look.
         </p>
       </div>
       {/* Card 3 */}
@@ -65,8 +65,8 @@ const FeatureCards = () => {
         <p
           className={`text-[#333] text-sm md:text-base lg:text-[18px] font-medium leading-[120%] ${inter.className}`}
         >
-          Every weekend, share your week's details with WEEKAI to get a clear
-          progress rating and actionable feedback.
+          Every weekend, share your week&apos;s details with WEEKAI to get a
+          clear progress rating and actionable feedback.
         </p>
       </div>
     </div>

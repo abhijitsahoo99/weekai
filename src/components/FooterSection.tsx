@@ -9,7 +9,7 @@ const FooterSection = () => {
         {/* Title and Button Section */}
         <div className="flex flex-col items-center gap-6 md:gap-16">
           <h2 className="flex justify-center items-center self-stretch text-black text-center font-['Helvetica'] text-2xl md:text-3xl lg:text-[40px] font-bold uppercase">
-            Haven't started yet? Get shit done this week. Start now!
+            Haven&apos;t started yet? Get shit done this week. Start now!
           </h2>
           <button className="flex px-4 py-4 justify-center items-center rounded-lg bg-[#5657F0]">
             <span
@@ -27,7 +27,21 @@ const FooterSection = () => {
             <span
               className={`text-black text-center text-xs md:text-base lg:text-[16px] font-normal ${inter.className}`}
             >
-              made with love by <Link href="https://twitter.com/kb24x7" style={{ textDecoration: 'underline', color: 'black' }}>@kb24x7</Link> and <Link href="https://twitter.com/justabhi99" style={{ textDecoration: 'underline', color: 'black' }}>@justabhi99</Link> (say hi!)
+              made with love by{" "}
+              <Link
+                href="https://twitter.com/kb24x7"
+                style={{ textDecoration: "underline", color: "black" }}
+              >
+                @kb24x7
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="https://twitter.com/justabhi99"
+                style={{ textDecoration: "underline", color: "black" }}
+              >
+                @justabhi99
+              </Link>{" "}
+              (say hi!)
             </span>
             <span
               className={`text-black text-center text-xs md:text-base lg:text-[16px] font-normal ${inter.className}`}

@@ -12,8 +12,8 @@ const PricingSection = () => {
             START YOUR 4-WEEKS FREE TRAIL,COMPLETELY FREE
           </h2>
           <p
-          className={`text-center text-base md:text-lg lg:text-[20px] font-medium text-[#575555] leading-normal ${inter.className}`}
-        >
+            className={`text-center text-base md:text-lg lg:text-[20px] font-medium text-[#575555] leading-normal ${inter.className}`}
+          >
             Choose a plan and start your 4-weeks free trail. Get started to talk
             with WEEKAI and get the most of every week
           </p>
@@ -32,8 +32,8 @@ const PricingSection = () => {
               <p
                 className={`text-[#555] text-sm md:text-base lg:text-[16px] font-medium leading-normal ${inter.className}`}
               >
-                It's free to get started. No credit card required. Set up your
-                email and start with giving details about what you want to
+                It&apos;s free to get started. No credit card required. Set up
+                your email and start with giving details about what you want to
                 achieve and where you lack.
               </p>
               <button className="flex px-4 py-4 justify-center items-center gap-2.5 rounded-lg bg-[#5657F0]">
@@ -65,7 +65,7 @@ const PricingSection = () => {
                 className={`text-[#555] text-sm md:text-base lg:text-[16px] font-medium leading-normal ${inter.className}`}
               >
                 Start your 4-week free trial when you sign up with WEEKAI. Then
-                it's just $100 per month for unlimited chat every friday.
+                it&apos;s just $100 per month for unlimited chat every friday.
               </p>
               <button className="flex px-4 py-4 justify-center items-center gap-2.5 rounded-lg bg-[#5657F0]">
                 <span

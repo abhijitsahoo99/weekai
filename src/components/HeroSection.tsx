@@ -14,6 +14,8 @@ const HeroSection = () => {
           className="object-cover"
           priority
         />
+        {/* Gradient Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 h-[200px] bg-gradient-to-t from-[#F6F6FF] to-transparent" />
       </div>
 
       {/* Navbar */}
