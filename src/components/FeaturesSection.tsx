@@ -13,7 +13,7 @@ const FeaturesSection = () => {
           GET MORE DONE EVERY WEEK
         </h2>
         <p
-          className={`text-black text-center text-base md:text-lg lg:text-[20px] font-normal leading-normal ${inter.className}`}
+          className={`text-center text-base md:text-lg lg:text-[20px] font-medium text-[#575555] leading-normal ${inter.className}`}
         >
           Receive weekly email check-ins, AI-powered ratings, and personalized
           feedback to help you stay accountable and improve consistently.

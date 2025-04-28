@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 const FooterSection = () => {
@@ -27,7 +27,7 @@ const FooterSection = () => {
             <span
               className={`text-black text-center text-xs md:text-base lg:text-[16px] font-normal ${inter.className}`}
             >
-              made with love by @kb24x7 and @justabhi99 (say hi!)
+              made with love by <Link href="https://twitter.com/kb24x7" style={{ textDecoration: 'underline', color: 'black' }}>@kb24x7</Link> and <Link href="https://twitter.com/justabhi99" style={{ textDecoration: 'underline', color: 'black' }}>@justabhi99</Link> (say hi!)
             </span>
             <span
               className={`text-black text-center text-xs md:text-base lg:text-[16px] font-normal ${inter.className}`}

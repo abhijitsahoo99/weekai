@@ -12,8 +12,8 @@ const PricingSection = () => {
             START YOUR 4-WEEKS FREE TRAIL,COMPLETELY FREE
           </h2>
           <p
-            className={`text-[#646464] text-center text-sm md:text-base lg:text-[20px] font-medium leading-normal self-stretch ${inter.className}`}
-          >
+          className={`text-center text-base md:text-lg lg:text-[20px] font-medium text-[#575555] leading-normal ${inter.className}`}
+        >
             Choose a plan and start your 4-weeks free trail. Get started to talk
             with WEEKAI and get the most of every week
           </p>
