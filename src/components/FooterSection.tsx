@@ -1,0 +1,51 @@
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+
+const FooterSection = () => {
+  return (
+    <div className="w-full h-[832px] flex-shrink-0 bg-[#F6F6FF] flex flex-col overflow-hidden">
+      <div className="flex w-[824px] flex-col justify-center items-center gap-16 mx-auto mt-[172px]">
+        {/* Title and Button Section */}
+        <div className="flex flex-col items-center gap-16">
+          <h2 className="flex justify-center items-center self-stretch text-black text-center font-['Helvetica'] text-[40px] font-bold uppercase">
+            Haven't started yet? Get shit done this week. Start now!
+          </h2>
+          <button className="flex px-4 py-4 justify-center items-center rounded-lg bg-[#5657F0]">
+            <span
+              className={`text-white text-[20px] font-semibold ${inter.className}`}
+            >
+              Start you 4-weeks free trial
+            </span>
+          </button>
+        </div>
+
+        {/* Divider and Footer Links */}
+        <div className="flex w-[1248px] flex-col items-start gap-3">
+          <div className="h-[1px] bg-black w-full" />
+          <div className="flex justify-between items-center w-full">
+            <span
+              className={`text-black text-center text-[16px] font-normal ${inter.className}`}
+            >
+              made with love by @kb24x7 and @justabhi99 (say hi!)
+            </span>
+            <span
+              className={`text-black text-center text-[16px] font-normal ${inter.className}`}
+            >
+              © 2025 WeekAI. All rights reserved. Terms • Privacy Policy
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Large WEEKAI Text */}
+      <div className="w-[1248px] mx-auto mt-auto -mb-[48px]">
+        <h1 className="text-center font-['Helvetica'] text-[300px] font-bold leading-[100%] text-transparent [background-image:linear-gradient(to_bottom_right,#5657F0_0%,#F0F0F3_50%),linear-gradient(to_bottom_left,#5657F0_0%,#F0F0F3_50%),linear-gradient(to_top_left,#5657F0_0%,#F0F0F3_50%),linear-gradient(to_top_right,#5657F0_0%,#F0F0F3_50%)] [background-position:bottom_right,bottom_left,top_left,top_right] [background-size:50%_50%] [background-repeat:no-repeat] [-webkit-background-clip:text] [background-clip:text]">
+          WEEKAI
+        </h1>
+      </div>
+    </div>
+  );
+};
+
+export default FooterSection;
