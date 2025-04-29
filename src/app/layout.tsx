@@ -1,53 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "WEEKAI",
-  description: "Get more done every week",
-  openGraph: {
-    title: "WEEKAI",
-    description: "Get more done every week",
-    images: [
-      {
-        url: "/heroelonweek.png",
-        width: 1200,
-        height: 630,
-        alt: "WEEKAI - Get more done every week",
-      },
-    ],
-    type: "website",
-    siteName: "WEEKAI",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "WEEKAI",
-    description: "Get more done every week",
-    images: ["/heroelonweek.png"],
-  },
+  title: "WEEKAI - Get shit done this week",
+  description: "Get AI-powered feedback on your weekly progress",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={inter.className}>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

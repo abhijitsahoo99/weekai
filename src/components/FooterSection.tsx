@@ -1,8 +1,24 @@
+"use client";
+
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { signIn, useSession } from "next-auth/react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 const FooterSection = () => {
+  const router = useRouter();
+  const { data: session } = useSession();
+
+  const handleGetStarted = () => {
+    if (session) {
+      router.push("/profile");
+    } else {
+      signIn("google", { callbackUrl: "/profile" });
+    }
+  };
+
   return (
     <div className="w-full h-[500px] md:h-[832px] flex-shrink-0 bg-[#F6F6FF] flex flex-col overflow-hidden">
       <div className="flex w-full md:w-[824px] flex-col justify-center items-center gap-6 md:gap-16 mx-auto mt-[60px] md:mt-[100px] px-4 md:px-0">
@@ -11,11 +27,14 @@ const FooterSection = () => {
           <h2 className="flex justify-center items-center self-stretch text-black text-center font-['Helvetica'] text-2xl md:text-3xl lg:text-[40px] font-bold uppercase">
             Haven&apos;t started yet? Get shit done this week. Start now!
           </h2>
-          <button className="flex px-4 py-4 justify-center items-center rounded-lg bg-[#5657F0]">
+          <button
+            onClick={handleGetStarted}
+            className="flex px-4 py-4 justify-center items-center rounded-lg bg-[#5657F0] cursor-pointer"
+          >
             <span
               className={`text-white text-base md:text-lg lg:text-[20px] font-semibold ${inter.className}`}
             >
-              Start you 4-weeks free trial
+              Start your 4-weeks free trial
             </span>
           </button>
         </div>
@@ -30,18 +49,12 @@ const FooterSection = () => {
               made with love by{" "}
               <Link
                 href="https://twitter.com/kb24x7"
-                style={{ textDecoration: "underline", color: "black" }}
+                className="text-[#5657F0] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                @kb24x7
-              </Link>{" "}
-              and{" "}
-              <Link
-                href="https://twitter.com/justabhi99"
-                style={{ textDecoration: "underline", color: "black" }}
-              >
-                @justabhi99
-              </Link>{" "}
-              (say hi!)
+                kb24x7
+              </Link>
             </span>
             <span
               className={`text-black text-center text-xs md:text-base lg:text-[16px] font-normal ${inter.className}`}

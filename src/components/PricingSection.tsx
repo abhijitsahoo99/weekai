@@ -1,8 +1,23 @@
+"use client";
+
 import { Inter } from "next/font/google";
+import { useRouter } from "next/navigation";
+import { signIn, useSession } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const PricingSection = () => {
+  const router = useRouter();
+  const { data: session } = useSession();
+
+  const handleGetStarted = () => {
+    if (session) {
+      router.push("/profile");
+    } else {
+      signIn("google", { callbackUrl: "/profile" });
+    }
+  };
+
   return (
     <div className="w-full h-[832px] px-4 md:px-[129px] py-16 md:py-[148px] flex justify-center items-center flex-shrink-0 bg-[#F6F6FF]">
       <div className="flex flex-col items-center gap-8 w-full md:w-[610px]">
@@ -36,7 +51,10 @@ const PricingSection = () => {
                 your email and start with giving details about what you want to
                 achieve and where you lack.
               </p>
-              <button className="flex px-4 py-4 justify-center items-center gap-2.5 rounded-lg bg-[#5657F0]">
+              <button
+                className="flex px-4 py-4 justify-center items-center gap-2.5 rounded-lg bg-[#5657F0]"
+                onClick={handleGetStarted}
+              >
                 <span
                   className={`text-white text-sm md:text-base lg:text-[16px] font-semibold leading-normal ${inter.className}`}
                 >
@@ -67,7 +85,10 @@ const PricingSection = () => {
                 Start your 4-week free trial when you sign up with WEEKAI. Then
                 it&apos;s just $100 per month for unlimited chat every friday.
               </p>
-              <button className="flex px-4 py-4 justify-center items-center gap-2.5 rounded-lg bg-[#5657F0]">
+              <button
+                className="flex px-4 py-4 justify-center items-center gap-2.5 rounded-lg bg-[#5657F0]"
+                onClick={handleGetStarted}
+              >
                 <span
                   className={`text-white text-sm md:text-base lg:text-[16px] font-semibold leading-normal ${inter.className}`}
                 >
