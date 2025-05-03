@@ -47,13 +47,22 @@ const FooterSection = () => {
               className={`text-black text-center text-xs md:text-base lg:text-[16px] font-normal ${inter.className}`}
             >
               made with love by{" "}
-              <Link
+              {/* <Link
                 href="https://twitter.com/kb24x7"
                 className="text-[#5657F0] hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 kb24x7
+              </Link> */}
+              {/* {" "}and{" "} */}
+              <Link
+                href="https://twitter.com/justabhi99"
+                className="hover:text-[#5657F0] hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                justabhi99
               </Link>
             </span>
             <span

@@ -71,7 +71,7 @@ const PricingSection = () => {
                 <h3
                   className={`text-black text-2xl md:text-3xl lg:text-[40px] font-semibold leading-normal uppercase ${inter.className}`}
                 >
-                  $100
+                  $50
                 </h3>
                 <h3
                   className={`text-black text-sm md:text-base lg:text-[16px] font-semibold leading-none ${inter.className}`}
